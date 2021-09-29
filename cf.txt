@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+set<long long int> tola;
+void primes(){
+   vector<bool> v((long long int)1e6+10,true);
+   tola.insert(4);
+   
+   for(long long int i = 3 ; i< (long long int)1e6+1 ; i+=2){
+        if(v[i]){
+            tola.insert(i*i);
+            for(long long int j = i ; j<=(long long int)1e6 ; j+=i){
+                v[j]=false;
+                }
+        }
+    }
+}
+
+int main(){
+    long long int n ;
+    cin>>n;
+    primes();
+    for(long long int i =0 ; i<n ;++i){
+        long long int temp;
+        cin>>temp;
+        if(tola.find(temp)!=tola.end()){cout<<"YES"<<endl;}
+        else {cout<<"NO"<<endl;}
+    }
+
+return 0;}

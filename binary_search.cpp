@@ -1,5 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
+int lower_bound(vector<int> &a , int find){
+	int lo = 0 , hi = a.size() -1 ;
+	while(hi - lo>1){
+		int mid = (lo+hi)/2;
+		if(a[mid]<find){
+			lo = mid+1 ;
+		}
+		else{
+			hi = mid;
+		}
+	}
+	if(lo >= find){return lo;}
+	else if(hi >= find){return hi;}
+	else{return -1;}
+
+}
 int main(){
 	int n ;
 	cin>>n;
@@ -9,17 +25,7 @@ int main(){
 	}
 	int to_find;
 	cin>>to_find;
-	int lo = 0,hi = n-1 ,mid;
-	while(hi-lo>1){
-		mid = (hi+lo)/2;
-		if(v[mid]>to_find){
-			hi = mid-1;
-		}
-		else{
-			lo = mid;
-		}
-	}
-	if(to_find == v[lo]){cout<<lo<<endl;}
-	else if(to_find == v[hi]){cout<<hi<<endl;}
-	else{cout<<"not found "<<endl;}
+	int it = lower_bound(v , to_find);
+	cout<<it<<" "<<v[it]<<endl;
+
 return 0 ; }

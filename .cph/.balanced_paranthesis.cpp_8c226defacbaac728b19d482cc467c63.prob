@@ -1,0 +1,1 @@
+{"name":"Local: balanced_paranthesis","url":"c:\\Users\\ronak\\Desktop\\cp_code\\balanced_paranthesis.cpp","tests":[{"id":1632901894441,"input":"3\n(){}[][]([])\n(((((}}}}\n{((()))}","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ronak\\Desktop\\cp_code\\balanced_paranthesis.cpp","group":"local","local":true}

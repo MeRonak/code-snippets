@@ -15,6 +15,7 @@ void is_prime(int n){
 }
 int main(){
     int n;
+   
     cin>>n;
     is_prime(n);
 return 0;}
