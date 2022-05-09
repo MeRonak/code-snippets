@@ -1,0 +1,1 @@
+{"name":"Local: question","url":"c:\\Users\\ronak\\Desktop\\cp_code\\question.cpp","tests":[{"id":1632920440641,"input":"5 10\n0 1 2 3 4\n3\n1\n6\n9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ronak\\Desktop\\cp_code\\question.cpp","group":"local","local":true}
